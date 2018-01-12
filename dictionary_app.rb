@@ -6,11 +6,11 @@ looking_up_words = true
 while looking_up_words
 
 
+  system "clear"
   puts "All the words by Nathan Knautz"
   puts
   print "Enter a word: "
   word = gets.chomp
-  system "clear"
 
   if word == "q" 
     looking_up_words = false
@@ -45,8 +45,7 @@ while looking_up_words
     pronunciations.each do |pronoun|
       puts pronoun["raw"]
     end 
-
-  end
+  
 
 end
 
